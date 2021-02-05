@@ -1,2 +1,1 @@
-# simple-snowpack-setup
-Simple snowpack setup.
+# Simple snowpack html css grid setup.
