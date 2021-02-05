@@ -1,0 +1,22 @@
+$sm: 700px; //medium
+$md: 950px; //large
+
+$sm-dn: "(max-width: #{$sm - 1})";
+$md-dn: "(max-width: #{$md - 1})";
+
+@mixin small {
+  @media screen and #{$sm-dn} { @content; }
+}
+
+@mixin medium {
+  @media screen and #{$md-dn} { @content; }
+}
+
+
+// use
+//
+// @use 'breakpoints' as br;
+//
+// @include br.small {
+//   background: yellow;
+// }
